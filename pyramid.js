@@ -92,7 +92,21 @@ exports.fullPyramidRight = (size) => {
 
 // Direction: DOWN, Full Pyramid
 exports.fullPyramidDown = (size) => {
-    
+    let i, a, b, m, x, y, f_y, output = '';
+    m = size * 2
+    for(i = 0; i <= size; i++){
+        y = (2 * i) - 1
+        f_y = m - y
+        x = i
+        for(a = 0; a <= x; a++){
+            output += ' '
+        }
+        for(b = 0; b < f_y; b++){
+            output += '*'
+        }
+        output += '\n'
+    }
+    console.log(output)
 }
 
 //Direction: Left, Full Pyramid

@@ -14,7 +14,7 @@ const {
 
 // -------
 
-fullPyramidUp(15);
-fullPyramidRight(26);
-// fullPyramidDown();
+// fullPyramidUp(10);
+// fullPyramidRight(26);
+fullPyramidDown(20);
 // fullPyramidLeft();
