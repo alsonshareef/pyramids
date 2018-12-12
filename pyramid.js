@@ -118,6 +118,11 @@ exports.fullPyramidDown = (size) => {
 //Direction: Left, Full Pyramid
 exports.fullPyramidLeft = (size) => {
     let i, x, y, a, b, center, output = ''
+
+    if (size % 2 !== 0){
+        size--
+    }
+
     for(i = 0; i <= size; i++){
         center = Math.floor(size/2)
         x = center - i;
@@ -125,6 +130,7 @@ exports.fullPyramidLeft = (size) => {
         if (x < 0){
             x *= -1
         }
+
         y = (center + 1) - x
 
         // console.log('size', size)
