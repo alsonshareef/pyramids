@@ -74,17 +74,23 @@ exports.halfPyramidDown = (size) => {
 exports.fullPyramidRight = (size) => {
     let i = 0, y = 0, x = 0, center, output = '';
     for(i = 0; i <= size; i++){
-        center = size/2
+        center = Math.floor(size/2)
         x = center - i;
-
+        // console.log(center)
         if (x < 0) {
             x *= -1
         }
-
+        
         y = (center + 1) - x;
+        x = Math.ceil(x)
+        y = Math.floor(y)
+
         for(a = 0; a < y; a++){
             output += '* '
         }
+        // console.log('i', i)
+        // console.log('x', x)
+        // console.log('y', y, '/n')
         output += '\n'
     }
     console.log(output)
@@ -111,5 +117,28 @@ exports.fullPyramidDown = (size) => {
 
 //Direction: Left, Full Pyramid
 exports.fullPyramidLeft = (size) => {
-    
+    let i, x, y, a, b, center, output = ''
+    for(i = 0; i <= size; i++){
+        center = Math.floor(size/2)
+        x = center - i;
+        
+        if (x < 0){
+            x *= -1
+        }
+        y = (center + 1) - x
+
+        // console.log('size', size)
+        // console.log('x', x)
+        // console.log('y', y, '\n')
+
+        for(a = 1; a <= x; a++){
+            output += ' '
+        }
+
+        for(b = 1; b <= y; b++){
+            output += '*'
+        }
+        output += '\n'
+    }
+    console.log(output)
 }
