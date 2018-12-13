@@ -8,32 +8,33 @@ const {
     fullPyramidLeft
 } = require('./pyramid')
 
-// Tests
-    let pyramidStrings = [
+// Expected string outputs from functions up to size 10
+    let halfPyramidUpStrings = [
         '*\n',
         '*\n**\n',
         '*\n**\n***\n',
         '*\n**\n***\n****\n',
         '*\n**\n***\n****\n*****\n',
-        '',
-        '',
-        '',
-        '',
-        ''
+        '*\n**\n***\n****\n*****\n******\n',
+        '*\n**\n***\n****\n*****\n******\n*******\n',
+        '*\n**\n***\n****\n*****\n******\n*******\n********\n',
+        '*\n**\n***\n****\n*****\n******\n*******\n********\n*********\n',
+        '*\n**\n***\n****\n*****\n******\n*******\n********\n*********\n**********\n'
     ]
 
-function halfPyramidUpTest(){
-    let SIZE = 0
+// halfPyramidUp Test function
+function halfPyramidUpTest(size, num){
+    num = size + 1
 
-    // let test = halfPyramidUp(SIZE) === (pyramidStrings.size0 += '\n') ? true : false
-    // console.log(test)
-    console.log(`Testing for Size: ${SIZE} starting..`)
-    if (halfPyramidUp(SIZE) === (pyramidStrings[SIZE])){
+    console.log(`Testing for Size: ${num} starting..`)
+    if (halfPyramidUp(size) === (halfPyramidUpStrings[size])){
         console.log(`** PASSED ** Pyramid function output is EQUAL to expected pyramid string output`)
     } else {
         console.log(`** ERROR ** Pyramid function output is NOT EQUAL to expected pyramid string output!`)
     }
-    console.log(`Testing completed..`)
+    console.log(`Testing completed.. \n`)
 }
-halfPyramidUpTest();
 
+for(let i = 0; i <= 9; i++){
+    halfPyramidUpTest(i);
+}
