@@ -10,7 +10,7 @@ exports.halfPyramidUp = (size) => {
         }
         output += '\n'
     }
-    console.log(output)
+    return output
 }
 
 // Direction: LEFT, Half Pyramid
@@ -28,7 +28,7 @@ exports.halfPyramidLeft = (size) => {
         }
         output += '\n'
     }
-    console.log(output)
+    return output
 }
 
 // Direction: DOWN, Half Pyramid
@@ -46,7 +46,7 @@ exports.halfPyramidDown = (size) => {
         }
         output += '\n'
     }
-    console.log(output)
+    return output
 }
 
 // *** FULL PYRAMIDS
@@ -67,12 +67,17 @@ exports.halfPyramidDown = (size) => {
         }
         output += '\n'
     }
-    console.log(output)
+    return output
 }
 
 // Direction: RIGHT, Full Pyramid
 exports.fullPyramidRight = (size) => {
     let i = 0, y = 0, x = 0, center, output = '';
+
+    if (size % 2 !== 0){
+        size--
+    }
+
     for(i = 0; i <= size; i++){
         center = Math.floor(size/2)
         x = center - i;
@@ -93,7 +98,7 @@ exports.fullPyramidRight = (size) => {
         // console.log('y', y, '/n')
         output += '\n'
     }
-    console.log(output)
+    return output
 }
 
 // Direction: DOWN, Full Pyramid
@@ -112,7 +117,7 @@ exports.fullPyramidDown = (size) => {
         }
         output += '\n'
     }
-    console.log(output)
+    return output
 }
 
 //Direction: Left, Full Pyramid
@@ -146,5 +151,5 @@ exports.fullPyramidLeft = (size) => {
         }
         output += '\n'
     }
-    console.log(output)
+    return output
 }
