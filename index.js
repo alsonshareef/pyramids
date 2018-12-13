@@ -21,5 +21,5 @@ const {
 
 // For testing bug
 for(let i = 0; i <= 10; i++){
-    console.log(halfPyramidUp(i));
+    console.log(halfPyramidDown(i));
 }
