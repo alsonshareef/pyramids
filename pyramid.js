@@ -49,6 +49,8 @@ exports.halfPyramidDown = (size) => {
     return output
 }
 
+
+
 // *** FULL PYRAMIDS
 
 // Direction: UP, Full Pyramid

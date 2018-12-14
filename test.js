@@ -72,6 +72,41 @@ console.log(`Testing completed.. \n`)
 }
 
 // Run to test
+// for(let i = 0; i <= 9; i++){
+// halfPyramidLeftTest(i);
+// }
+
+
+
+// **** halfPyramidDown Test function ****
+
+// Expected string outputs from functions up to size 10
+let halfPyramidDownStrings = [
+    '* \n',
+    '** \n*  \n',
+    '*** \n**  \n*   \n',
+    '**** \n***  \n**   \n*    \n',
+    '***** \n****  \n***   \n**    \n*     \n',
+    '****** \n*****  \n****   \n***    \n**     \n*      \n',
+    '******* \n******  \n*****   \n****    \n***     \n**      \n*       \n',
+    '******** \n*******  \n******   \n*****    \n****     \n***      \n**       \n*        \n',
+    '********* \n********  \n*******   \n******    \n*****     \n****      \n***       \n**        \n*         \n',
+    '********** \n*********  \n********   \n*******    \n******     \n*****      \n****       \n***        \n**         \n*          \n'
+]
+
+function halfPyramidDownTest(size, num){
+num = size + 1
+
+console.log(`Testing for Size: ${num} starting..`)
+if (halfPyramidDown(size) === (halfPyramidDownStrings[size])){
+    console.log(`** PASSED ** halfPyramidDown function output is EQUAL to expected pyramid string output`)
+} else {
+    console.log(`** ERROR ** halfPyramidDown function output is NOT EQUAL to expected pyramid string output!`)
+}
+console.log(`Testing completed.. \n`)
+}
+
+// Run to test
 for(let i = 0; i <= 9; i++){
-halfPyramidLeftTest(i);
+halfPyramidDownTest(i);
 }

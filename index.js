@@ -10,7 +10,7 @@ const {
 
 // console.log(halfPyramidUp(15));
 // console.log(halfPyramidLeft(15));
-// console.log(halfPyramidDown(15))
+// console.log(halfPyramidDown(10))
 
 // -------
 
@@ -20,6 +20,6 @@ const {
 // console.log(fullPyramidLeft(25));
 
 // For testing bug
-for(let i = 0; i <= 10; i++){
-    console.log(halfPyramidDown(i));
+for(let i = 0; i <= 9; i++){
+    console.log(fullPyramidUp(i));
 }
