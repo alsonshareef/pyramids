@@ -9,7 +9,7 @@ const {
 } = require('./pyramid')
 
 // ** Half Pyramids --
-// console.log(halfPyramidUp(15));
+// console.log(halfPyramidUp(10));
 // console.log(halfPyramidLeft(15));
 // console.log(halfPyramidDown(10))
 
