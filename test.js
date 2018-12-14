@@ -107,6 +107,41 @@ console.log(`Testing completed.. \n`)
 }
 
 // Run to test
+// for(let i = 0; i <= 9; i++){
+// halfPyramidDownTest(i);
+// }
+
+
+
+// **** fullPyramidUp Test function ****
+
+// Expected string outputs from functions up to size 10
+let fullPyramidUpStrings = [
+    ' \n',
+    '  \n *\n',
+    '   \n  *\n ***\n',
+    '    \n   *\n  ***\n *****\n',
+    '     \n    *\n   ***\n  *****\n *******\n',
+    '      \n     *\n    ***\n   *****\n  *******\n *********\n',
+    '       \n      *\n     ***\n    *****\n   *******\n  *********\n ***********\n',
+    '        \n       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\n',
+    '         \n        *\n       ***\n      *****\n     *******\n    *********\n   ***********\n  *************\n ***************\n',
+    '          \n         *\n        ***\n       *****\n      *******\n     *********\n    ***********\n   *************\n  ***************\n *****************\n'
+]
+
+function fullPyramidUpTest(size, num){
+num = size + 1
+
+console.log(`Testing for Size: ${num} starting..`)
+if (fullPyramidUp(size) === (fullPyramidUpStrings[size])){
+    console.log(`** PASSED ** fullPyramidUp function output is EQUAL to expected pyramid string output`)
+} else {
+    console.log(`** ERROR ** fullPyramidUp function output is NOT EQUAL to expected pyramid string output!`)
+}
+console.log(`Testing completed.. \n`)
+}
+
+// Run to test
 for(let i = 0; i <= 9; i++){
-halfPyramidDownTest(i);
+fullPyramidUpTest(i);
 }

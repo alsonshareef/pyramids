@@ -92,12 +92,12 @@ exports.fullPyramidRight = (size) => {
         x = Math.ceil(x)
         y = Math.floor(y)
 
+        // console.log('x', x)
+        // console.log('y', y, '\n')
+
         for(a = 0; a < y; a++){
             output += '* '
         }
-        // console.log('i', i)
-        // console.log('x', x)
-        // console.log('y', y, '/n')
         output += '\n'
     }
     return output
