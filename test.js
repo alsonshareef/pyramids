@@ -247,6 +247,6 @@ console.log(`Testing completed.. \n`)
 }
 
 // Run to test
-for(let i = 0; i <= 9; i++){
-fullPyramidLeftTest(i);
-}
+// for(let i = 0; i <= 9; i++){
+// fullPyramidLeftTest(i);
+// }

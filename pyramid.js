@@ -18,11 +18,11 @@ exports.halfPyramidLeft = (size) => {
     let x, y, a, b, c, output = '';
     for(a = 0; a <= size; a++){
         x = size - a
+        y = a
+
         for (b = 0; b <= x; b++){
             output += ' '
         }
-
-        y = a
         for (c = 0; c <= y; c++){
             output += '*'
         }
@@ -36,11 +36,11 @@ exports.halfPyramidDown = (size) => {
     let x, y, a, b, c, output = '';
     for (a = 0; a <= size; a++){
         x = size - a
+        y = a
+
         for(b = 0; b <= x; b++){
             output += '*'
         }
-
-        y = a
         for(c = 0; c <= y; c++){
             output += ' '
         }
@@ -87,8 +87,9 @@ exports.fullPyramidRight = (size) => {
             x *= -1
         }
         
-        y = (center + 1) - x;
         x = Math.ceil(x)
+        
+        y = (center + 1) - x;
         y = Math.floor(y)
 
         for(a = 0; a < y; a++){
