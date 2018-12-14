@@ -83,7 +83,6 @@ exports.fullPyramidRight = (size) => {
     for(i = 0; i <= size; i++){
         center = Math.floor(size/2)
         x = center - i;
-        // console.log(center)
         if (x < 0) {
             x *= -1
         }
@@ -137,10 +136,6 @@ exports.fullPyramidLeft = (size) => {
         }
 
         y = (center + 1) - x
-
-        // console.log('size', size)
-        // console.log('x', x)
-        // console.log('y', y, '\n')
 
         for(a = 1; a <= x; a++){
             output += ' '

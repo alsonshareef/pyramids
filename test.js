@@ -212,6 +212,41 @@ console.log(`Testing completed.. \n`)
 }
 
 // Run to test
+// for(let i = 0; i <= 9; i++){
+// fullPyramidDownTest(i);
+// }
+
+
+
+// **** fullPyramidLeft Test function ****
+
+// Expected string outputs from functions Left to size 10
+let fullPyramidLeftStrings = [
+    '*\n',
+    '*\n',
+    ' *\n**\n *\n',
+    ' *\n**\n *\n',
+    '  *\n **\n***\n **\n  *\n',
+    '  *\n **\n***\n **\n  *\n',
+    '   *\n  **\n ***\n****\n ***\n  **\n   *\n',
+    '   *\n  **\n ***\n****\n ***\n  **\n   *\n',
+    '    *\n   **\n  ***\n ****\n*****\n ****\n  ***\n   **\n    *\n',
+    '    *\n   **\n  ***\n ****\n*****\n ****\n  ***\n   **\n    *\n'
+]
+
+function fullPyramidLeftTest(size, num){
+num = size + 1
+
+console.log(`Testing for Size: ${num} starting..`)
+if (fullPyramidLeft(size) === (fullPyramidLeftStrings[size])){
+    console.log(`** PASSED ** fullPyramidLeft function output is EQUAL to expected pyramid string output`)
+} else {
+    console.log(`** ERROR ** fullPyramidLeft function output is NOT EQUAL to expected pyramid string output!`)
+}
+console.log(`Testing completed.. \n`)
+}
+
+// Run to test
 for(let i = 0; i <= 9; i++){
-fullPyramidDownTest(i);
+fullPyramidLeftTest(i);
 }

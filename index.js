@@ -21,5 +21,5 @@ const {
 
 // For testing bug
 for(let i = 0; i <= 9; i++){
-    console.log(fullPyramidDown(i));
+    console.log(fullPyramidLeft(i));
 }
