@@ -142,6 +142,41 @@ console.log(`Testing completed.. \n`)
 }
 
 // Run to test
+// for(let i = 0; i <= 9; i++){
+// fullPyramidUpTest(i);
+// }
+
+
+
+// **** fullPyramidRight Test function ****
+
+// Expected string outputs from functions Right to size 10
+let fullPyramidRightStrings = [
+    '* \n',
+    '* \n',
+    '* \n* * \n* \n',
+    '* \n* * \n* \n',
+    '* \n* * \n* * * \n* * \n* \n',
+    '* \n* * \n* * * \n* * \n* \n',
+    '* \n* * \n* * * \n* * * * \n* * * \n* * \n* \n',
+    '* \n* * \n* * * \n* * * * \n* * * \n* * \n* \n',
+    '* \n* * \n* * * \n* * * * \n* * * * * \n* * * * \n* * * \n* * \n* \n',
+    '* \n* * \n* * * \n* * * * \n* * * * * \n* * * * \n* * * \n* * \n* \n'
+]
+
+function fullPyramidRightTest(size, num){
+num = size + 1
+
+console.log(`Testing for Size: ${num} starting..`)
+if (fullPyramidRight(size) === (fullPyramidRightStrings[size])){
+    console.log(`** PASSED ** fullPyramidRight function output is EQUAL to expected pyramid string output`)
+} else {
+    console.log(`** ERROR ** fullPyramidRight function output is NOT EQUAL to expected pyramid string output!`)
+}
+console.log(`Testing completed.. \n`)
+}
+
+// Run to test
 for(let i = 0; i <= 9; i++){
-fullPyramidUpTest(i);
+fullPyramidRightTest(i);
 }
