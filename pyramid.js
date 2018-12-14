@@ -92,9 +92,6 @@ exports.fullPyramidRight = (size) => {
         x = Math.ceil(x)
         y = Math.floor(y)
 
-        // console.log('x', x)
-        // console.log('y', y, '\n')
-
         for(a = 0; a < y; a++){
             output += '* '
         }
@@ -111,6 +108,7 @@ exports.fullPyramidDown = (size) => {
         y = (2 * i) - 1
         f_y = m - y
         x = i
+
         for(a = 0; a <= x; a++){
             output += ' '
         }

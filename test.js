@@ -177,6 +177,41 @@ console.log(`Testing completed.. \n`)
 }
 
 // Run to test
+// for(let i = 0; i <= 9; i++){
+// fullPyramidRightTest(i);
+// }
+
+
+
+// **** fullPyramidDown Test function ****
+
+// Expected string outputs from functions Down to size 10
+let fullPyramidDownStrings = [
+    ' *\n',
+    ' ***\n  *\n',
+    ' *****\n  ***\n   *\n',
+    ' *******\n  *****\n   ***\n    *\n',
+    ' *********\n  *******\n   *****\n    ***\n     *\n',
+    ' ***********\n  *********\n   *******\n    *****\n     ***\n      *\n',
+    ' *************\n  ***********\n   *********\n    *******\n     *****\n      ***\n       *\n',
+    ' ***************\n  *************\n   ***********\n    *********\n     *******\n      *****\n       ***\n        *\n',
+    ' *****************\n  ***************\n   *************\n    ***********\n     *********\n      *******\n       *****\n        ***\n         *\n',
+    ' *******************\n  *****************\n   ***************\n    *************\n     ***********\n      *********\n       *******\n        *****\n         ***\n          *\n'
+]
+
+function fullPyramidDownTest(size, num){
+num = size + 1
+
+console.log(`Testing for Size: ${num} starting..`)
+if (fullPyramidDown(size) === (fullPyramidDownStrings[size])){
+    console.log(`** PASSED ** fullPyramidDown function output is EQUAL to expected pyramid string output`)
+} else {
+    console.log(`** ERROR ** fullPyramidDown function output is NOT EQUAL to expected pyramid string output!`)
+}
+console.log(`Testing completed.. \n`)
+}
+
+// Run to test
 for(let i = 0; i <= 9; i++){
-fullPyramidRightTest(i);
+fullPyramidDownTest(i);
 }
